@@ -1,12 +1,13 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import * as React from 'react';
+import { Avatar, Card, IconButton } from 'react-native-paper';
 
-const Duas = () => {
-  return (
-    <View>
-      <Text>Duas</Text>
-    </View>
-  )
-}
+const Duas = () => (
+  <Card.Title
+    title="Card Title"
+    subtitle="Card Subtitle"
+    left={(props) => <Avatar.Icon {...props} icon="folder" />}
+    right={(props) => <IconButton {...props} icon="dots-vertical" onPress={() => {}} />}
+  />
+);
 
-export default Duas
+export default Duas;
